@@ -2,7 +2,7 @@ program GreenpointSource
   !- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   !  Green's function calculation program (Y. Yagi)
   !  Developed to be able to calculate Green's function for each space-knot
-  !  to adapt for multiple fault segment by introduting the knot.dat (2018.03 smz)
+  !  to adapt for multiple fault segment by introduting the knot.dat (2018.03 K. Shimizu)
   !  Modified to calculate the geometrical spreading factor using the TauP ray 
   !  parameter of the ak135 model. (2024.07.01 Y. Yagi)
   !- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
