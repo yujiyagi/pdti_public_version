@@ -199,7 +199,7 @@ subroutine tmp_get_lap_space(ns,xx,yy,mn,nn,jtn,jtn0,l_id_m,rtime,icmn,tr,r_s_t,
           enddo
         else
           if (n > 1) then
-            if(jtn(m-1,n-1) .ne. 0) then
+            if(jtn(m+1,n-1) .ne. 0) then
               do jt2 = 1,jtn(m+1,n-1)
                 l = l_id_m(m+1,n-1,jt2,icm)
                 a(k,l) =  wt1 *  disp_amp(jt2,rtime,tr(m+1,n-1),tw) * w(m,n,jt,icm) ! add for adaptive smoothing
