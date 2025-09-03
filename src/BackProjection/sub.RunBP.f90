@@ -178,7 +178,8 @@ subroutine taper_all(disp,nterm,widtap)
 end subroutine taper_all
 
 subroutine bp_filter(x,f1,f2,dt,nm)
-  !
+  !     The original code was written by Professor Kikuchi.
+  !      https://wwweic.eri.u-tokyo.ac.jp/ETAL/KIKUCHI/
   !     input x (raw data)
   !     output x (filtering data)
   !
@@ -223,6 +224,8 @@ subroutine bp_filter(x,f1,f2,dt,nm)
 END subroutine bp_filter
 
 SUBROUTINE CFFT(X,N,ID)
+  !     The original code was written by Professor Kikuchi.
+  !      https://wwweic.eri.u-tokyo.ac.jp/ETAL/KIKUCHI/
   ! <  FFT for complex variables >
   IMPLICIT COMPLEX(8) (X-Z)
   DIMENSION:: X(N)
