@@ -58,7 +58,7 @@ Program ABIC_TA
   close(10)
   open(60,file=".station.abic")
   read(60,*) jn
-  allocate(stcd(jn),comp(jn),dt(jn),sigw(jn),sigwd(jn),cp(jn),ndj(jn))
+  allocate(stcd(jn),comp(jn),dt(jn),sigw(jn),sigwd(jn),cp(jn),ndj(j))
   do j=1,jn
     read(60,*) stcd(j),comp(j),dt(j),sigw(j),sigwd(j),ndj(j),cp(jn)
   enddo
